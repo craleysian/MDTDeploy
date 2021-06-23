@@ -23,12 +23,16 @@
         
     </head>
 
-    <body>
+    <body onload="redirect()">
 
         <div>
             <h3>ALEYSIAN</h3>
             <h1>Metadata Tracker Deployment Authorization</h1>
             <p>You'll be redirected to the org you originated from shortly...</p>
+            <hr />
+            <p>Your authorization code is: <span id='auth-code'></span></p>
+            <br>
+            <p>Your origination URL is: <span  id='state'></span></p>
         </div>
 
         <!-- Scripts -->
