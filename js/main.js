@@ -11,7 +11,7 @@ function redirect() {
         
         // Extract the authorization code
         if (element.startsWith('code=')) {
-            authCode = decodeURIComponent(element.substring(5, element.length));
+            authCode = element.substring(5, element.length).replaceAll('%3D', '=');
         }
 
         // Extract the origination URL from the state parameter
@@ -27,5 +27,5 @@ function redirect() {
     document.getElementById('auth-code').innerHTML = authCode;
     document.getElementById('state').innerHTML = origURL;
 
-    window.location.replace(destination);
+    //window.location.replace(destination);
 }
