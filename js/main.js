@@ -24,12 +24,9 @@ function redirect() {
     })
 
     let destination = origURL + '?c__code=' + authCode + '&c__state=' + domain;
-    console.log(destination);
-    console.log(origURL);
-    console.log(domain);
 
     document.getElementById('auth-code').innerHTML = authCode;
     document.getElementById('state').innerHTML = origURL;
 
-    //window.location.replace(destination);
+    window.location.replace(destination);
 }
