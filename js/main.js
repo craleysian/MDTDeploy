@@ -25,8 +25,8 @@ function redirect() {
 
     let destination = origURL + '?c__code=' + authCode + '&c__state=' + domain;
 
-    document.getElementById('auth-code').innerHTML = authCode;
-    document.getElementById('state').innerHTML = origURL;
+    document.getElementById('domain').innerHTML = domain;
+    document.getElementById('origination').innerHTML = origURL;
 
     window.location.replace(destination);
 }

@@ -20,19 +20,21 @@
         <link rel="stylesheet" href="css/main.css">
 
         <!-- fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap" rel="stylesheet">
         
     </head>
 
     <body onload="redirect()">
 
-        <div>
-            <h3>ALEYSIAN</h3>
+        <div class="center">
+            <img src="images/aleysian-logo.png" alt="Aleysian LLC logo" height="50px">
             <h1>Metadata Tracker Deployment Authorization</h1>
+            <p>Authorizing org: <span id='domain'></span></p>
+            <p>Origination URL: <span  id='origination'></span></p>
+            <img class="spinner" src="images/spinner.gif" alt="loading" width="35px">
             <p>You'll be redirected to the org you originated from shortly...</p>
-            <hr />
-            <p>Your authorization code is: <span id='auth-code'></span></p>
-            <br>
-            <p>Your origination URL is: <span  id='state'></span></p>
         </div>
 
         <!-- Scripts -->
